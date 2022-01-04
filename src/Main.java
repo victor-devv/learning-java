@@ -3,26 +3,21 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args)
     {
-        //Using Scanner class to accept user input
-        Scanner scanner = new Scanner(System.in);
+        //EXPRESSIONS
+        //Expressions are combination of operands and operators
+        //operands = values, variables, numbers, quantity
+        //operators = + - * / %
 
-        System.out.println("What is your name?");
-        String name = scanner.nextLine();
+        double friends = 10;
 
-        System.out.println("How old are you?");
-        int age = scanner.nextInt();
+        //expression e.g
+        //friends = friends + 1;
+        //friends++;
+        //friends = friends * 2;
+        //friends = friends / 3;
+        friends = friends / 3;
+        //friends = friends % 3;
 
-        //clear \n from scanner since nextInt doesn't take the \n from the enter key. Not doing this would prevent the next nextLine() input from allowing user inputs
-        scanner.nextLine();
-
-        System.out.println("What is your favorite food?");
-        String food = scanner.nextLine();
-
-        System.out.println("Hello "+name);
-        System.out.println("You are "+age+" years old.");
-        System.out.println("You like "+food);
-
-
-
+        System.out.println(friends);
     }
 }
